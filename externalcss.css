@@ -1,0 +1,45 @@
+
+		.title{
+			font-size: 50px;
+			text-align: center;
+			color: white;
+			border: 10px solid white;
+			margin: 40px 300px;
+		}
+		.paras{
+			margin:20px 200px;
+			text-align: center;
+		}
+		.button{
+			background-color: green;
+			height:60px;
+			width:80px;
+			font-size: 40px;
+
+		}
+		.button:hover{
+			color-profile: black;
+		}
+
+		nav{
+			 word-spacing: 120px;
+			display:flex;
+			justify-content: space-around;
+			font:white;
+		}
+		.slideshow{
+
+			width:100%;
+			text-align: center;
+			display:inline-block;
+			position:relative;
+			align-content: center;
+
+		}
+		body{
+			background-image: url("backgroundelectriccars.jpg");
+			background-size: cover;
+		}
+
+
+	

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <link rel="stylesheet" type="text/css" href="externalcss.css"> -->
+	<title>
+		electric cars
+
+	</title>
+<style type="text/css">
+		.title{
+			font-size: 50px;
+			text-align: center;
+			color: white;
+			border: 10px solid white;
+			margin: 40px 300px;
+		}
+		.paras{
+			font-size: 26px;
+			margin:20px 200px;
+			text-align: center;
+		}
+		.button{
+			background-color: green;
+			height:60px;
+			width:80px;
+			font-size: 30px;
+
+		}
+		.button:hover{
+			color-profile: black;
+			font-size: 40px;
+		}
+
+		nav{
+			word-spacing: 120px;
+			display:flex;
+			justify-content: space-around;
+			color: white;
+			text-decoration: none;
+
+		}
+		.slideshow{
+
+			width:100%;
+			text-align: center;
+			display:inline-block;
+			position:relative;
+			align-content: center;
+
+		}
+		body{
+			background-image: url("backgroundelectriccars.jpg");
+			background-size: cover;
+		}
+
+		a{
+			text-decoration: none;
+			color: inherit;
+		}
+		.ping{
+			height:300px;
+			width:auto;
+		}
+
+</style>
+	
+
+
+</head>
+
+<body>
+
+<div>
+		<nav> 
+		<li>
+		<a href="index.html">home</a>
+		<a href="bmwi8.html">bmw</a>
+		<a href="tesla.html">tesla</a>
+		</li>
+		</nav>
+
+		<h1 class="title">CARS ELECTRO NATION</h1>
+		<p class="paras">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p class="paras">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequa	t. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p class="paras">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	</div>
+	
+
+	<div class="slideshow">
+		<center>
+		<img class="ping"  src="carsslideshow.jpg"    width="400">
+		<img class="ping"  src="carsslideshow2.jpg"   width="400">
+		<img class="ping"  src="carsslideshow3.jpg"   width="400">
+		<img class="ping"  src="carsslideshow4.jpg"    width="400">
+		<img class="ping"  src="carsslideshow5.jpg"   width="400">
+
+
+		<input class="button" type="button" value="<" placeholder="<" onclick="plusDivs(-1)">
+		<input class="button"  type="button"  value=">" placeholder=">" onclick="plusDivs(1)">
+		</center>
+
+
+	</div>
+
+		<script type="text/javascript">
+		var slideIndex= 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n){
+			showDivs(slideIndex +=n);
+		}
+
+		function showDivs(n){
+		var i;
+		var x=document.getElementsByClassName("ping");
+		if(n> x.length){slideIndex=1}
+		if(n<1) {slideIndex=x.length}	
+		for(i=0; i<x.length; i++){
+			x[i].style.display="none";
+		}
+		x[slideIndex-1].style.display ="block";
+		}
+
+		</script>
+
+</body>
+</html>
